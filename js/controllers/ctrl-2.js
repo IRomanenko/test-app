@@ -4,9 +4,6 @@ define(['./module'], function (controllers) {
 
         $scope.user = user;
 
-        $scope.sabmit = function() {
-
-        }
         $scope.back = function() {
             ngDialog.closeAll();
             $location.path('/firstPage');
