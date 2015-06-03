@@ -1,0 +1,4 @@
+define([
+    './user',
+    './validation'
+], function () {});

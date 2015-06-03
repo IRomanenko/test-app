@@ -1,0 +1,48 @@
+<div class="col-md-12">
+    <form class="col-md-2 col-md-offset-5">
+        <div class="form-group" data-ng-class="{ 'has-error': valRes.firstNameValid === false }">
+            <label for="firstName">First Name: *</label><label class="text-danger pull-right">Please fill in</label>
+            <input type="text"
+                   class="form-control"
+                   id="firstName"
+                   placeholder="Enter first name"
+                   required
+                   data-ng-model="user.firstName">
+        </div>
+
+        <div class="form-group" data-ng-class="{ 'has-error': valRes.lastNameValid === false }">
+            <label for="lastName">Last Name: *</label><label class="text-danger pull-right">Please fill in</label>
+            <input type="text"
+                   class="form-control"
+                   id="lastName"
+                   placeholder="Enter last name"
+                   required
+                   data-ng-model="user.lastName">
+        </div>
+
+        <div class="form-group" data-ng-class="{ 'has-error': valRes.emailValid === false }">
+            <label for="emailAddress">Email address: *</label><label class="text-danger pull-right">Please fill in correctly</label>
+            <input type="email"
+                   class="form-control"
+                   id="emailAddress"
+                   placeholder="Enter email"
+                   required
+                   data-ng-model="user.email">
+        </div>
+
+        <div class="form-group" data-ng-class="{ 'has-error': valRes.phoneValid === false }">
+            <label for="phone">Phone: *</label><label class="text-danger pull-right">Please fill in correctly</label>
+            <input type="tel"
+                   class="form-control"
+                   id="phone"
+                   placeholder="Enter phone +1-***-***-****"
+                   required
+                   data-ng-model="user.phone">
+        </div>
+
+        <button type="button"
+                class="btn btn-default"
+                data-ng-click="goNext()">Go next</button>
+    </form>
+</div>
+

@@ -1,0 +1,17 @@
+/* app css stylesheet */
+
+.text-danger {
+    display: none;
+}
+
+.has-error .text-danger {
+    display: block;
+}
+
+.preview label {
+    width: 120px;
+}
+
+.back-btn {
+    text-align: center;
+}
